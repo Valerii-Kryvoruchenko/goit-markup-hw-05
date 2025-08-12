@@ -490,15 +490,16 @@
         </div>
         <div class="subscribe-block">
           <p class="social-links-title">Subscribe</p>
-          <form>
-            <label class="footer-email-label" for="footer-email-field"></label>
-            <input
-              class="footer-email-field"
-              type="email"
-              name="footer_email"
-              id="footer-email-field"
-              placeholder="E-mail"
-            />
+          <form class="subscribe-form">
+            <label class="footer-email-label" for="footer-email-field">
+              <input
+                class="footer-email-field"
+                type="email"
+                name="footer_email"
+                id="footer-email-field"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="footer-subscribe-btn" type="submit">
               Subscribe<svg class="subscribe-btn-icon" width="24" height="20">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -522,15 +523,15 @@
         </p>
         <form>
           <div class="form-input-block">
-            <label class="form-labels" for="field-name">Name</label>
+            <label class="form-labels" for="user-name">Name</label>
             <div class="form-input-wrap">
               <input
                 class="form-input-text"
                 type="text"
-                name="field_name"
-                id="field-name"
+                name="user_name"
+                id="user-name"
               />
-              <svg class="form-field-icon" width="12" height="12">
+              <svg class="form-field-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -544,7 +545,7 @@
                 name="field_phone"
                 id="field-phone"
               />
-              <svg class="form-field-icon" width="13" height="13">
+              <svg class="form-field-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -558,31 +559,30 @@
                 name="field_email"
                 id="field-email"
               />
-              <svg class="form-field-icon" width="16" height="12">
+              <svg class="form-field-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="form-input-block">
-            <label class="form-labels" for="comment-area">Comment</label>
-            <div class="form-input-wrap">
-              <textarea
-                class="form-input-area"
-                name="comment_area"
-                id="comment-area"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+          <!-- comment -->
+          <div class="form-input-area-block">
+            <label class="form-labels" for="user-comment">Comment</label>
+            <textarea
+              class="form-input-area"
+              name="user_comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="form-checkbox-input">
             <input
               class="privacy-checking visually-hidden"
               type="checkbox"
-              name="privacy_checking"
-              id="form-checkbox"
+              name="user_privacy"
+              id="user-privacy"
               value="true"
             />
-            <label class="form-labels" for="form-checkbox"
+            <label class="form-labels" for="user-privacy"
               ><span class="custom-checkbox"
                 ><svg class="custom-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg></span
